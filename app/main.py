@@ -7,6 +7,7 @@ PORT = 6379
 def main():
     print("Logs from your program will appear here!")
 
+
     server_socket = socket.create_server((HOST, PORT), reuse_port=True)
     conn, addr = server_socket.accept()
 
